@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quaid -e- azam MOdal school and college</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#333;
+    }
+
+    header{
+      background:#0b1f3a;
+      color:white;
+      padding:20px;
+      text-align:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    nav{
+      margin-top:10px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+    }
+
+    .hero{
+      background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1400&auto=format&fit=crop');
+      height:90vh;
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero h1{
+      font-size:55px;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      font-size:20px;
+      margin-bottom:20px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 25px;
+      background:#00b4ff;
+      color:white;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#008fd1;
+      transform:scale(1.05);
+    }
+
+    section{
+      padding:60px 30px;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:40px;
+      color:#0b1f3a;
+      font-size:35px;
+    }
+
+    .about{
+      max-width:1000px;
+      margin:auto;
+      text-align:center;
+      line-height:1.8;
+      font-size:18px;
+    }
+
+    .students{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.15);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card-content h3{
+      color:#0b1f3a;
+      margin-bottom:10px;
+    }
+
+    .card-content p{
+      margin:5px 0;
+    }
+
+    .contact{
+      background:#0b1f3a;
+      color:white;
+      text-align:center;
+      border-radius:20px;
+      max-width:1000px;
+      margin:auto;
+      padding:40px;
+    }
+
+    footer{
+      background:#06101f;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+      .hero h1{
+        font-size:38px;
+      }
+
+      .hero p{
+        font-size:17px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Quaid Modal school and College School</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#students">Students</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div>
+      <h1>Welcome to GMSC School</h1>
+      <p>Modern Education For Bright Future</p>
+      <a href="#students" class="btn">View Students</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="title">About Our School</h2>
+    <div class="about">
+      <p>
+        QMSC School is a modern educational institute providing quality education,
+        discipline, technology, and creativity for students. Our mission is to prepare
+        students for a successful future with knowledge and confidence.
+      </p>
+    </div>
+  </section>
+
+  <section id="students">
+    <h2 class="title">Our Students</h2>
+
+    <div class="students">
+
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/boys/1.jpg" alt="Student">
+        <div class="card-content">
+          <h3>Ali Khan</h3>
+          <p><b>Class:</b> 10th</p>
+          <p><b>Roll No:</b> 101</p>
+          <p><b>Marks:</b> 92%</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/girls/2.jpg" alt="Student">
+        <div class="card-content">
+          <h3>Ayesha Noor</h3>
+          <p><b>Class:</b> 9th</p>
+          <p><b>Roll No:</b> 102</p>
+          <p><b>Marks:</b> 89%</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/boys/3.jpg" alt="Student">
+        <div class="card-content">
+          <h3>Hamza Ahmed</h3>
+          <p><b>Class:</b> 8th</p>
+          <p><b>Roll No:</b> 103</p>
+          <p><b>Marks:</b> 91%</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/girls/4.jpg" alt="Student">
+        <div class="card-content">
+          <h3>Fatima Ali</h3>
+          <p><b>Class:</b> 7th</p>
+          <p><b>Roll No:</b> 104</p>
+          <p><b>Marks:</b> 95%</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/boys/5.jpg" alt="Student">
+        <div class="card-content">
+          <h3>Bilal Hassan</h3>
+          <p><b>Class:</b> 10th</p>
+          <p><b>Roll No:</b> 105</p>
+          <p><b>Marks:</b> 88%</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/girls/6.jpg" alt="Student">
+        <div class="card-content">
+          <h3>Zara Malik</h3>
+          <p><b>Class:</b> 9th</p>
+          <p><b>Roll No:</b> 106</p>
+          <p><b>Marks:</b> 93%</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/boys/7.jpg" alt="Student">
+        <div class="card-content">
+          <h3>Usman Tariq</h3>
+          <p><b>Class:</b> 8th</p>
+          <p><b>Roll No:</b> 107</p>
+          <p><b>Marks:</b> 84%</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/girls/8.jpg" alt="Student">
+        <div class="card-content">
+          <h3>Maryam Shah</h3>
+          <p><b>Class:</b> 7th</p>
+          <p><b>Roll No:</b> 108</p>
+          <p><b>Marks:</b> 90%</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/boys/9.jpg" alt="Student">
+        <div class="card-content">
+          <h3>Saad Khan</h3>
+          <p><b>Class:</b> 6th</p>
+          <p><b>Roll No:</b> 109</p>
+          <p><b>Marks:</b> 87%</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/girls/10.jpg" alt="Student">
+        <div class="card-content">
+          <h3>Hina Yusuf</h3>
+          <p><b>Class:</b> 10th</p>
+          <p><b>Roll No:</b> 110</p>
+          <p><b>Marks:</b> 96%</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <br>
+      <p><b>Email:</b> info@usecsschool.com</p>
+      <p><b>Phone:</b> +92 300 1234567</p>
+      <p><b>Address:</b> Pakistan</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 USECS School | All Rights Reserved</p>
+  </footer>
+
+  <!-- LOGIN MODAL -->
+  <div id="loginBox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); justify-content:center; align-items:center; z-index:2000;">
+    <div style="background:white; padding:30px; border-radius:15px; width:320px; text-align:center;">
+      <h2 style="margin-bottom:20px; color:#0b1f3a;">Student Login</h2>
+      <input type="text" placeholder="Username" style="width:100%; padding:10px; margin:10px 0; border:1px solid #ccc; border-radius:8px;">
+      <input type="password" placeholder="Password" style="width:100%; padding:10px; margin:10px 0; border:1px solid #ccc; border-radius:8px;">
+      <button onclick="alert('Login Successful')" class="btn" style="border:none; cursor:pointer;">Login</button>
+      <br><br>
+      <button onclick="closeLogin()" style="background:red; color:white; border:none; padding:10px 20px; border-radius:8px; cursor:pointer;">Close</button>
+    </div>
+  </div>
+
+  <!-- RESULT SECTION -->
+  <section id="results">
+    <h2 class="title">Student Result System</h2>
+
+    <div style="max-width:700px; margin:auto; background:white; padding:30px; border-radius:20px; box-shadow:0 5px 15px rgba(0,0,0,0.2);">
+      <input type="text" id="rollInput" placeholder="Enter Roll Number" style="width:100%; padding:15px; border:1px solid #ccc; border-radius:10px; margin-bottom:20px;">
+
+      <button onclick="showResult()" class="btn" style="border:none; cursor:pointer; width:100%;">Check Result</button>
+
+      <div id="resultBox" style="margin-top:20px; font-size:18px;"></div>
+    </div>
+  </section>
+
+  <!-- ADMIN PANEL -->
+  <section id="admin">
+    <h2 class="title">Admin Panel</h2>
+
+    <div style="max-width:900px; margin:auto; background:white; padding:30px; border-radius:20px; box-shadow:0 5px 15px rgba(0,0,0,0.2); overflow:auto;">
+
+      <table style="width:100%; border-collapse:collapse; text-align:center;">
+        <tr style="background:#0b1f3a; color:white;">
+          <th style="padding:15px;">Student</th>
+          <th>Class</th>
+          <th>Roll No</th>
+          <th>Marks</th>
+        </tr>
+
+        <tr>
+          <td style="padding:15px;">Add Name</td>
+          <td>Add Class</td>
+          <td>Add Roll</td>
+          <td>Add Marks</td>
+        </tr>
+
+      </table>
+    </div>
+  </section>
+
+  <!-- SCHOOL MANAGEMENT -->
+  <section>
+    <h2 class="title">School Management System</h2>
+
+    <div class="students">
+      <div class="card">
+        <div class="card-content">
+          <h3>Attendance System</h3>
+          <p>Manage student attendance records.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <h3>Fee Management</h3>
+          <p>Track student fees and payments.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <h3>Teacher Management</h3>
+          <p>Add and manage teacher information.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATABASE INFO -->
+  <section>
+    <h2 class="title">Database Connection</h2>
+
+    <div class="about">
+      <p>
+        Ye website future me MySQL, Firebase, MongoDB, PHP aur Node.js ke sath connect ki ja sakti hai.
+        Abhi ye frontend version hai.
+      </p>
+    </div>
+  </section>
+
+  <script>
+    function openLogin(){
+      document.getElementById('loginBox').style.display='flex';
+    }
+
+    function closeLogin(){
+      document.getElementById('loginBox').style.display='none';
+    }
+
+    function showResult(){
+      let roll = document.getElementById('rollInput').value;
+      let resultBox = document.getElementById('resultBox');
+
+      if(roll == '101'){
+        resultBox.innerHTML = '<h3>Ali Khan</h3><p>Marks: 92%</p><p>Status: Pass</p>';
+      }
+      else if(roll == '102'){
+        resultBox.innerHTML = '<h3>Ayesha Noor</h3><p>Marks: 89%</p><p>Status: Pass</p>';
+      }
+      else{
+        resultBox.innerHTML = '<p style="color:red;">Result Not Found</p>';
+      }
+    }
+  </script>
+
+</body>
+</html>
+```
+
+
+
+```html
+<div class="card">
+  <img src="YOUR-IMAGE.jpg" alt="Student">
+  <div class="card-content">
+    <h3>Student Name</h3>
+    <p><b>Class:</b> 10th</p>
+    <p><b>Roll No:</b> 101</p>
+    <p><b>Marks:</b> 90%</p>
+  </div>
+</div>
+```
+
+
+
+```html
+<img src="ali.jpg" alt="Student">
+```
+
+
+```html
+<div class="card">
+  <img src="YOUR-IMAGE.jpg" alt="Student">
+  <div class="card-content">
+    <h3>Student Name</h3>
+    <p><b>Class:</b> </p>
+    <p><b>Roll No:</b> </p>
+    <p><b>Marks:</b> </p>
+  </div>
+</div>
+```
+
+
+</body>
+</html>
